@@ -1,0 +1,40 @@
+# Homograph Domain Analyzer - Requirements
+# =========================================
+
+# Core Requirements (Essential)
+# ----------------------------
+python-whois>=0.9.0        # WHOIS lookups for domain registration info
+dnspython>=2.6.0           # Advanced DNS resolution and queries
+tldextract>=5.1.0          # Accurate TLD extraction from domains
+
+# Optional but Recommended
+# ------------------------
+confusable-homoglyphs>=3.2.0  # Unicode confusables detection
+rich>=13.7.0               # Beautiful console output with tables and progress bars
+
+# Development Dependencies (Optional)
+# -----------------------------------
+# pytest>=8.0.0            # Testing framework
+# pytest-cov>=4.1.0        # Coverage reporting
+# black>=24.0.0            # Code formatting
+# flake8>=7.0.0            # Linting
+# mypy>=1.8.0              # Type checking
+
+# Alternative WHOIS Libraries (if python-whois has issues)
+# --------------------------------------------------------
+# whois>=0.9.27            # Alternative whois library
+# python-whois-extended    # Extended WHOIS parsing
+
+# Notes:
+# ------
+# - python-whois: Primary WHOIS library, handles most TLDs well
+# - dnspython: Provides advanced DNS features beyond basic socket lookups
+# - tldextract: Properly handles complex TLDs like .co.uk
+# - confusable-homoglyphs: Uses Unicode consortium data for confusable chars
+# - rich: Enhances CLI experience with colors, tables, and progress bars
+
+# Installation:
+# pip install -r requirements.txt
+
+# Minimal Installation (core functionality only):
+# pip install python-whois dnspython tldextract
